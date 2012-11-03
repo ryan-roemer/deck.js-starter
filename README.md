@@ -8,6 +8,8 @@ TODO:
 - Slide: GH Pages, Repo
 - Custom CSS (links, etc.)
 - NPM: build, watch targets (and make work!).
+- Add subtitle CSS for title slide.
+- Fork me banner on all / first slide.
 
 [Deck.js] is a fantastic HTML-based approach to presentations. This is some
 basic boilerplate code for my talks, including the following tweaks and
@@ -18,6 +20,13 @@ plugins:
   directly without building.
 
 
+Auto-build (watch) HTML:
+
+    $ npm run-script watch
+
+Build HTML manually:
+
+    $ npm run-script build
 
 
 Licenses
