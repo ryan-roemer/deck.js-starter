@@ -97,7 +97,8 @@ html.no-js(lang='en')
     script(src="extensions/navigation/deck.navigation.js")
     script(src="extensions/scale/deck.scale.js")
 
-    // Plugin: CodeMirror
+    // Plugin: CodeMirror (with CoffeeScript enhancements).
+    script(src="js/vendor/coffee-script-1.4.0.min.js")
     script(src="plugins/codemirror/codemirror.js")
     script(src="plugins/codemirror/mode/javascript/javascript.js")
     script(src="plugins/codemirror/mode/coffeescript/coffeescript.js")
@@ -112,8 +113,7 @@ html.no-js(lang='en')
             theme: "elegant",
             indentUnit: 2,
             indentWithTabs: false,
-            runnable: false,
-            globals: ["CoffeeScript"]
+            runnable: false
           }
         });
       });

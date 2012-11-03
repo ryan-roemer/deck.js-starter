@@ -142,7 +142,12 @@
             return function(event) {
 
               // Check if mode is CoffeeScript
-              var mode = codeblock.attr("mode"); //.toLowerCase() === "coffeescript"
+              var mode = codeblock.attr("mode"),
+                isCoffee = mode && mode.toLowerCase() === "coffeescript";
+
+              if (isCoffee && !CoffeeScript) {
+                throw new Error("Need global CoffeeScript available to run.");
+              }
 
               // save the default logging behavior.
               var real_console_log = console.log;
@@ -154,8 +159,6 @@
               var iframe = $("<iframe>")
                 .css("display", "none")
                 .appendTo($d.find('body'));
-
-              console.log("TODO HERE mode", mode);
 
               // Overwrite the default log behavior to pipe to an output element.
               console.log = function() {
@@ -177,6 +180,14 @@
                 "var MSIE/*@cc_on =1@*/;"+ // sniff
                 "console={ log: parent.console.log };" +
                 "parent.sandbox=MSIE?this:{eval:function(s){return eval(s)}}<\/script>";
+
+              // Add CoffeeScript global to sandbox.
+              if (isCoffee) {
+                sandBoxMarkup = "<script>"+
+                  "var MSIE/*@cc_on =1@*/;"+ // sniff
+                  "console={ log: parent.console.log };" +
+                  "parent.sandbox={eval:function(s){s = parent.CoffeeScript.compile(s); return eval(s);}}<\/script>";
+              }
 
               var exposeGlobals;
               if (exposeGlobals = $(codeblock).attr("globals")) {
