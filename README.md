@@ -7,9 +7,6 @@ TODO:
 
 - CoffeeScript execution.
 - Slide: GH Pages, Repo
-- Custom CSS (links, etc.)
-- NPM: build, watch targets (and make work!).
-- Add subtitle CSS for title slide.
 - Fork me banner on all / first slide.
 
 
