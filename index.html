@@ -1,0 +1,83 @@
+<!DOCTYPE html><!--[if lt IE 7]>
+<html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"></html><![endif]--><!--[if IE 7]>
+<html lang="en" class="no-js lt-ie9 lt-ie8"></html><![endif]--><!--[if IE 8]>
+<html lang="en" class="no-js lt-ie9"></html><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Deck.js Boilerplate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+    <!-- Required stylesheets-->
+    <link rel="stylesheet" href="core/deck.core.css">
+    <!-- Extension CSS files go here. Remove or add as needed.-->
+    <link rel="stylesheet" href="extensions/goto/deck.goto.css">
+    <link rel="stylesheet" href="extensions/menu/deck.menu.css">
+    <link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" href="extensions/status/deck.status.css">
+    <link rel="stylesheet" href="extensions/hash/deck.hash.css">
+    <link rel="stylesheet" href="extensions/scale/deck.scale.css">
+    <!-- Style theme. More available in /themes/style/ or create your own.-->
+    <link rel="stylesheet" href="themes/style/swiss.css">
+    <!-- Transition. More available in /themes/transition/ or create your own.-->
+    <link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+    <!-- Plugin: CodeMirror-->
+    <link rel="stylesheet" href="plugins/codemirror/deck.codemirror.css">
+    <link rel="stylesheet" href="plugins/codemirror/themes/elegant.css">
+    <!-- Modernizr.-->
+    <script src="js/vendor/modernizr.custom.js"></script>
+  </head>
+  <body class="deck-container">
+    <section id="title" class="slide"><h1>Deck.js Boilerplate</h1>
+    </section>
+    <section class="slide"><h2>Deck.js Boilerplate</h2>
+
+<p>An opionated starting point for <a href="https://github.com/imakewebthings/deck.js">deck.js</a> presentation goodness.</p>
+
+<p>This is my custom set of tweaks / additions to deck, including:</p>
+
+<ul><li><strong><a href="https://github.com/iros/deck.js-codemirror">Jade Templates</a></strong>: Can optionally build using Jade
+(with Markdown) support.</li><li><strong><a href="https://github.com/iros/deck.js-codemirror">CodeMirror</a></strong>: Live JavaScript code sample execution with
+additional <a href="http://coffeescript.org/">CoffeeScript</a> support.</li></ul>
+    </section>
+    <section class="slide">
+      <h1>Here</h1>
+    </section>
+    <!-- deck.navigation snippet--><a href="#" title="Previous" class="deck-prev-link">&#8592;</a><a href="#" title="Next" class="deck-next-link">&#8594;</a>
+    <!-- deck.status snippet-->
+    <p class="deck-status"><span class="deck-status-current"></span>/<span class="deck-status-total"></span></p>
+    <!-- deck.goto snippet-->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input id="goto-slide" type="text" name="slidenum" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+    <!--deck.hash snippet--><a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+    <!-- Required JS files.-->
+    <script src="js/vendor/jquery-1.8.2.min.js"></script>
+    <script src="core/deck.core.js"></script>
+    <!-- Extension JS files. Add or remove as needed.-->
+    <script src="core/deck.core.js"></script>
+    <script src="extensions/hash/deck.hash.js"></script>
+    <script src="extensions/menu/deck.menu.js"></script>
+    <script src="extensions/goto/deck.goto.js"></script>
+    <script src="extensions/status/deck.status.js"></script>
+    <script src="extensions/navigation/deck.navigation.js"></script>
+    <script src="extensions/scale/deck.scale.js"></script>
+    <!-- Plugin: CodeMirror-->
+    <script src="plugins/codemirror/codemirror.js"></script>
+    <script src="plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="plugins/codemirror/mode/coffeescript/coffeescript.js"></script>
+    <script src="plugins/codemirror/deck.codemirror.js"></script>
+    <!-- Initialize the deck.-->
+    <script>
+      $(function() {
+        $.deck('.slide');
+      });
+    </script>
+  </body>
+</html>

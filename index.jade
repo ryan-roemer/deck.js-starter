@@ -1,0 +1,28 @@
+extends layout
+
+block slides
+  section.slide#title
+    :markdown
+      # Deck.js Boilerplate
+
+  section.slide
+    :markdown
+      ## Deck.js Boilerplate
+
+      An opionated starting point for [deck.js][deckjs] presentation goodness.
+
+      This is my custom set of tweaks / additions to deck for faster and
+      easier authorship, including:
+
+      * **[Jade Templates][jade]**: Can optionally build using Jade
+        (with Markdown) support.
+      * **[CodeMirror][cm]**: Live JavaScript code sample execution with
+        additional [CoffeeScript][cs] support.
+
+      [deckjs]: https://github.com/imakewebthings/deck.js
+      [jade]: https://github.com/iros/deck.js-codemirror
+      [cm]: https://github.com/iros/deck.js-codemirror
+      [cs]: http://coffeescript.org/
+
+  section.slide
+    h1 Here
