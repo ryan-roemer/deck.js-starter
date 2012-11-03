@@ -16,8 +16,8 @@ block slides
 
       * **[Jade Templates][jade]**: Can optionally build using Jade
         (with Markdown) support.
-      * **[CodeMirror][cm]**: Live JavaScript code sample execution with
-        additional [CoffeeScript][cs] support.
+      * **[CodeMirror][cm]**: Live JavaScript code sample execution.
+      * **[CoffeeScript][cs]**: Support for CoffeeScript code execution.
 
       [deckjs]: https://github.com/imakewebthings/deck.js
       [jade]: https://github.com/iros/deck.js-codemirror
@@ -25,4 +25,16 @@ block slides
       [cs]: http://coffeescript.org/
 
   section.slide
-    h1 Here
+    :markdown
+      ## JavaScript Example
+
+      You can edit and run the following code sample from your browser:
+
+    textarea.code#code(name="code", mode="javascript", runnable="true", style="display: none;").
+      var toCamel = function (str) {
+        return str.replace(/(\_[a-z])/g, function (val) {
+          return val.toUpperCase().replace('_', '');
+        });
+      };
+
+      console.log(toCamel("my_cased_variable"));

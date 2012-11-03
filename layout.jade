@@ -95,5 +95,14 @@ html.no-js(lang='en')
     // Initialize the deck.
     script
       $(function() {
-        $.deck('.slide');
+        $.deck('.slide', {
+          codemirror: {
+            lineNumbers: true,
+            theme: "elegant",
+            indentUnit: 2,
+            indentWithTabs: false,
+            runnable: false,
+            globals: ["CoffeeScript"]
+          }
+        });
       });
