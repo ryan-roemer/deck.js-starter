@@ -5,8 +5,7 @@ A simple, opinionated starter kit for [deck.js][deckjs] presentations.
 
 TODO:
 
-- Upload to GH
-- GH pages.
+- CoffeeScript execution.
 - Slide: GH Pages, Repo
 - Custom CSS (links, etc.)
 - NPM: build, watch targets (and make work!).
@@ -37,7 +36,7 @@ Installation / Use
 The easiest way to start with the starter git is to download a [tarball][tb] or
 fork the [GitHub][gh] repository:
 
-    $ git clone https://ryan-roemer.github.com/deck.js-starter my-presentation
+    $ git clone https://github.com/ryan-roemer/deck.js-starter.git my-presentation
 
 To author using Jade, you will need Node.js installed, and to install the
 required packages:
@@ -75,7 +74,7 @@ Included libraries:
 * CoffeeScript: MIT
 
 [tb]: https://ryan-roemer.github.com/deck.js-starter/archive/master.tar.gz
-[demo]: https://ryan-roemer.github.com/deck.js-starter
+[demo]: http://ryan-roemer.github.com/deck.js-starter
 [gh]: https://github.com/ryan-roemer/deck.js-starter
 [deckjs]: https://github.com/imakewebthings/deck.js
 [jade]: https://github.com/iros/deck.js-codemirror
