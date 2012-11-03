@@ -38,3 +38,16 @@ block slides
       };
 
       console.log(toCamel("my_cased_variable"));
+
+  section.slide
+    :markdown
+      ## CoffeeScript Example
+
+      You can even run CoffeeScript code samples!
+
+    textarea.code#code(name="code", mode="coffeescript", runnable="true", style="display: none;").
+      toCamel = (str) ->
+        str.replace /(\_[a-z])/g, (val) ->
+          val.toUpperCase().replace '_', ''
+
+      console.log toCamel "my_cased_variable"

@@ -1,6 +1,14 @@
 Deck.js Boilerplate
 ===================
 
+TODO:
+
+- Upload to GH
+- GH pages.
+- Slide: GH Pages, Repo
+- Custom CSS (links, etc.)
+- NPM: build, watch targets (and make work!).
+
 [Deck.js] is a fantastic HTML-based approach to presentations. This is some
 basic boilerplate code for my talks, including the following tweaks and
 plugins:
