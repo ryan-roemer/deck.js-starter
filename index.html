@@ -15,5 +15,14 @@ easier authorship, including:</p>
 };
 
 console.log(toCamel("my_cased_variable"));</textarea></section><!-- deck.navigation snippet--><a href="#" title="Previous" class="deck-prev-link">&#8592;</a><a href="#" title="Next" class="deck-next-link">&#8594;</a><!-- deck.status snippet--><p class="deck-status"><span class="deck-status-current"></span>/<span class="deck-status-total"></span></p><!-- deck.goto snippet--><form action="." method="get" class="goto-form"><label for="goto-slide">Go to slide:</label><input id="goto-slide" type="text" name="slidenum" list="goto-datalist"><datalist id="goto-datalist"></datalist><input type="submit" value="Go"></form><!--deck.hash snippet--><a href="." title="Permalink to this slide" class="deck-permalink">#</a><!-- Required JS files.--><script src="js/vendor/jquery-1.8.2.min.js"></script><script src="core/deck.core.js"></script><!-- Extension JS files. Add or remove as needed.--><script src="core/deck.core.js"></script><script src="extensions/hash/deck.hash.js"></script><script src="extensions/menu/deck.menu.js"></script><script src="extensions/goto/deck.goto.js"></script><script src="extensions/status/deck.status.js"></script><script src="extensions/navigation/deck.navigation.js"></script><script src="extensions/scale/deck.scale.js"></script><!-- Plugin: CodeMirror--><script src="plugins/codemirror/codemirror.js"></script><script src="plugins/codemirror/mode/javascript/javascript.js"></script><script src="plugins/codemirror/mode/coffeescript/coffeescript.js"></script><script src="plugins/codemirror/deck.codemirror.js"></script><!-- Initialize the deck.--><script>$(function() {
-  $.deck('.slide');
+  $.deck('.slide', {
+    codemirror: {
+      lineNumbers: true,
+      theme: "elegant",
+      indentUnit: 2,
+      indentWithTabs: false,
+      runnable: false,
+      globals: ["CoffeeScript"]
+    }
+  });
 });</script></body></html>
