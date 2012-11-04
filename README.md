@@ -70,7 +70,7 @@ Included libraries:
 [demo]: http://ryan-roemer.github.com/deck.js-starter
 [gh]: https://github.com/ryan-roemer/deck.js-starter
 [deckjs]: https://github.com/imakewebthings/deck.js
-[jade]: https://github.com/iros/deck.js-codemirror
+[jade]: http://jade-lang.com
 [cm]: https://github.com/iros/deck.js-codemirror
 [cs]: http://coffeescript.org/
 [mnml]: https://github.com/duijf/mnml
