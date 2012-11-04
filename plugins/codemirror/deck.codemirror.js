@@ -176,12 +176,13 @@
                 }
               };
 
+              // Assume JavaScript by default.
               var sandBoxMarkup = "<script>"+
                 "var MSIE/*@cc_on =1@*/;"+ // sniff
                 "console={ log: parent.console.log };" +
                 "parent.sandbox=MSIE?this:{eval:function(s){return eval(s)}}<\/script>";
 
-              // Add CoffeeScript global to sandbox.
+              // Switch to CoffeeScript for eval string if CS mode.
               if (isCoffee) {
                 sandBoxMarkup = "<script>"+
                   "var MSIE/*@cc_on =1@*/;"+ // sniff
