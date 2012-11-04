@@ -6,9 +6,9 @@ A simple, opinionated starter kit for [deck.js][deckjs] presentations.
 Introduction
 ============
 
-[Deck.js] is a fantastic HTML-based approach to presentations. This project
-provides some basic Deck boilerplate, plugins and enhancements that I find
-really help quick authoring of presentations.
+[Deck.js][deckjs] is a fantastic HTML-based approach to presentations. This
+project provides some basic Deck boilerplate, plugins and enhancements that I
+find really help quick authoring of presentations.
 
 Features:
 
@@ -35,8 +35,8 @@ required packages:
     $ npm install
 
 From here, you can edit "index.jade" to add slides using either Jade or Jade
-with the Markdown enhancements (see source for demo on how to do this). Run
-the "watch" script to automatically build all of your changes into the final
+with the Markdown enhancements (see source for demo on how to do this). Run the
+"watch" script to automatically build all of your changes into the final
 "index.html" file:
 
     $ npm run-script watch
