@@ -3,13 +3,6 @@ Deck.js Starter
 
 A simple, opinionated starter kit for [deck.js][deckjs] presentations.
 
-TODO:
-
-- CoffeeScript execution.
-- Slide: GH Pages, Repo
-- Fork me banner on all / first slide.
-
-
 Introduction
 ============
 
@@ -64,6 +57,9 @@ MIT and GPL licenses.
 The [CodeMirror deck.js extension][cm] is Copyright Irene Ros and dual licensed
 under the MIT and GPL licenses.
 
+The [mnml deck.js theme][mnml] is Copyright Laurens Duijvesteijn and dual
+licensed under the MIT and GPL licenses.
+
 Included libraries:
 
 * jQuery: MIT and GPL
@@ -77,3 +73,4 @@ Included libraries:
 [jade]: https://github.com/iros/deck.js-codemirror
 [cm]: https://github.com/iros/deck.js-codemirror
 [cs]: http://coffeescript.org/
+[mnml]: https://github.com/duijf/mnml
