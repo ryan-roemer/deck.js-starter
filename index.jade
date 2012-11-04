@@ -5,7 +5,7 @@ block slides
     h1 Deck.js Starter
       .subtitle An opionated starting point for deck.js presentation goodness
 
-  section.slide
+  section.slide#introduction
     :markdown
       ## Deck.js Starter
 
@@ -22,7 +22,7 @@ block slides
       [cm]: https://github.com/iros/deck.js-codemirror
       [cs]: http://coffeescript.org/
 
-  section.slide
+  section.slide#js
     :markdown
       ## JavaScript Example
 
@@ -37,7 +37,7 @@ block slides
 
       console.log(toCamel("my_cased_variable"));
 
-  section.slide
+  section.slide#cs
     :markdown
       ## CoffeeScript Example
 
@@ -49,3 +49,33 @@ block slides
           val.toUpperCase().replace '_', ''
 
       console.log toCamel "my_cased_variable"
+
+  section.slide#jade
+    :markdown
+      ## Jade Templates
+
+      Starter slides can use Jade templates and filters.
+
+    pre.
+      section.slide#my-slide
+        :markdown
+          ## Markdown Header
+
+          You can write markdown paragraphs
+          using the `:markdown` filter.
+
+        p Or, any valid Jade too...
+
+
+  section.slide#next
+    :markdown
+      ## Get Started!
+
+      * Check out the [demo](http://ryan-roemer.github.com/deck.js-starter)
+      * [Fork](https://github.com/ryan-roemer/deck.js-starter) or
+        [download](https://ryan-roemer.github.com/deck.js-starter/archive/master.tar.gz)
+        the source from GitHub
+      * Edit "index.jade" and add your slides.
+      * Customize "layout.jade" with additional CSS, scripts, themes or Deck.js
+        plugins.
+      * ... and publish!
