@@ -58,38 +58,38 @@ html.no-js(lang='en')
     .deck-container
       block slides
 
-    //- -----------------------------------------------------------------------
-    //- Extension Snippets.
-    //- -----------------------------------------------------------------------
-    // deck.navigation snippet
-    a.deck-prev-link(href="#", title="Previous") &#8592;
-    a.deck-next-link(href="#", title="Next") &#8594;
+      //- ---------------------------------------------------------------------
+      //- Extension Snippets.
+      //- ---------------------------------------------------------------------
+      // deck.navigation snippet
+      a.deck-prev-link(href="#", title="Previous") &#8592;
+      a.deck-next-link(href="#", title="Next") &#8594;
 
-    // deck.status snippet
-    p.deck-status
-      span.deck-status-current
-      | /
-      span.deck-status-total
+      // deck.status snippet
+      p.deck-status
+        span.deck-status-current
+        | /
+        span.deck-status-total
 
-    // deck.goto snippet
-    form.goto-form(action=".", method="get")
-      label(for="goto-slide") Go to slide:
-      input#goto-slide(type="text", name="slidenum", list="goto-datalist")
-      datalist#goto-datalist
-      input(type="submit", value="Go")
+      // deck.goto snippet
+      form.goto-form(action=".", method="get")
+        label(for="goto-slide") Go to slide:
+        input#goto-slide(type="text", name="slidenum", list="goto-datalist")
+        datalist#goto-datalist
+        input(type="submit", value="Go")
 
-    //deck.hash snippet
-    a.deck-permalink(href=".", title="Permalink to this slide") #
+      //deck.hash snippet
+      a.deck-permalink(href=".", title="Permalink to this slide") #
 
     //- -----------------------------------------------------------------------
     //- JavaScript
     //- -----------------------------------------------------------------------
     // Required JS files.
     script(src="js/vendor/jquery-1.8.2.min.js")
+    script(src="js/vendor/coffee-script-1.4.0.min.js")
     script(src="core/deck.core.js")
 
     // Plugin: CodeMirror (with CoffeeScript enhancements).
-    script(src="js/vendor/coffee-script-1.4.0.min.js")
     script(src="plugins/codemirror/codemirror.js")
     script(src="plugins/codemirror/mode/javascript/javascript.js")
     script(src="plugins/codemirror/mode/coffeescript/coffeescript.js")
