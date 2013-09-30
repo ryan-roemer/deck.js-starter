@@ -13,7 +13,7 @@
     "node": ">0.6.x"
   },
   "scripts": {
-    "build": "./node_modules/.bin/jade index.jade",
-    "watch": "./node_modules/.bin/jade -w index.jade"
+    "build": "./node_modules/.bin/jade -P index.jade",
+    "watch": "./node_modules/.bin/jade -P -w index.jade"
   }
 }
