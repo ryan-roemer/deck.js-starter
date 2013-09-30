@@ -4,11 +4,10 @@
   "description": "Configuration control for production node deployments",
   "author": "Ryan Roemer <ryan@loose-bits.com>",
   "homepage": "http://ryan-roemer.github.com/deckjs-boilerplate/",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "jade": "0.27.6",
-    "markdown": "0.4.0"
+    "markdown": "0.4.0",
+    "jade": "~0.35.0"
   },
   "engines": {
     "node": ">0.6.x"
