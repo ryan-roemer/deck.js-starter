@@ -103,7 +103,26 @@ html.no-js(lang='en')
 
     // Initialize the deck.
     script .
-      $(function() {
+      $(function () {
+        $("textarea.code").each(function () {
+          var $code = $(this);
+
+          // Strip initial empty line.
+          $code.html($code.html().replace(/^\s*\n/, ""));
+
+          // Find indent, if any.
+          var match = /^(\s+)/.exec($code.html());
+          if (match) {
+            // Strip forward whitespace in first section.
+            $code.html($code.html()
+              .substr(match[0].length)
+              .split("\n" + match[0])
+              .join("\n")
+              .trim());
+          }
+        });
+
+        // Start deck.
         $.deck('.slide', {
           codemirror: {
             lineNumbers: true,

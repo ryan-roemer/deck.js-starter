@@ -63,7 +63,6 @@ easier authorship, including:</p>
           };
           
           console.log(toCamel("my_cased_variable"));
-          
         </textarea>
       </section>
       <section id="cs" class="slide"><h2>CoffeeScript Example</h2>
@@ -75,7 +74,6 @@ easier authorship, including:</p>
               val.toUpperCase().replace '_', ''
               
           console.log toCamel "my_cased_variable"
-          
         </textarea>
       </section>
       <section id="jade" class="slide"><h2>Jade Templates</h2>
@@ -129,7 +127,26 @@ plugins.</li><li>... and publish!</li></ul>
     <script src="extensions/scale/deck.scale.js"></script>
     <!-- Initialize the deck.-->
     <script>
-      $(function() {
+      $(function () {
+        $("textarea.code").each(function () {
+          var $code = $(this);
+          
+          // Strip initial empty line.
+          $code.html($code.html().replace(/^\s*\n/, ""));
+          
+          // Find indent, if any.
+          var match = /^(\s+)/.exec($code.html());
+          if (match) {
+            // Strip forward whitespace in first section.
+            $code.html($code.html()
+              .substr(match[0].length)
+              .split("\n" + match[0])
+              .join("\n")
+              .trim());
+          }
+        });
+        
+        // Start deck.
         $.deck('.slide', {
           codemirror: {
             lineNumbers: true,
